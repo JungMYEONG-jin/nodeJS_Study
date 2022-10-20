@@ -35,5 +35,25 @@ app.get("/get/review/nickname", (req, res) => {
         res.json({find: false});
 })
 
+app.get("/get/review/body", (req, res) => {
+    const name = req.body.nickName;
+    let findedReview = review.filter(data => data.nickName === name);
+
+    if (findedReview.length!=0)
+        res.json({find: true, review: findedReview});
+    else
+        res.json({find: false});
+})
+
+
+app.get("/get/review/:nickName", (req, res) => {
+    const name = req.params.nickName;
+    const findedReview = review.filter(data => data.nickName === name);
+    if (findedReview.length!=0)
+        res.json({find: true, review: findedReview});
+    else
+        res.json({find: false});
+})
+
 
 app.listen(3000, () => console.log("nodejs study by mj..."));
