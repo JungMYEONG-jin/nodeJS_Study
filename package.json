@@ -1,0 +1,25 @@
+{
+  "name": "practice",
+  "version": "1.0.0",
+  "description": "nodejs practice",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JungMYEONG-jin/nodeJS_Study.git"
+  },
+  "keywords": [
+    "nodejs"
+  ],
+  "author": "mj",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JungMYEONG-jin/nodeJS_Study/issues"
+  },
+  "homepage": "https://github.com/JungMYEONG-jin/nodeJS_Study#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
